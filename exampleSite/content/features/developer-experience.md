@@ -3,7 +3,7 @@ title: "Developer Experience"
 description: "Enjoy a seamless development experience with hot reload, component-based architecture, and clean, maintainable code."
 layout: "feature"
 badge: "Development"
-badgeColor: "#16a34a"
+color: "#16a34a"
 features:
   - title: "Component System"
     description: "Modular component architecture makes it easy to build and maintain your website. Reuse components across pages while maintaining consistency."
@@ -13,9 +13,9 @@ features:
     description: "Well-structured, documented code following best practices. Makes maintenance and updates straightforward for any developer."
   - title: "Detailed Documentation"
     description: "Comprehensive documentation covers everything from setup to advanced customization. Includes examples and best practices."
-demo:
-  description: "See how our developer-friendly architecture makes building websites a breeze."
-  image: "/images/feature-3.svg"
+demo: true
+demo_description: "See how our developer-friendly architecture makes building websites a breeze."
+demo_image: "/images/feature-3.svg"
 ---
 
 ## Built for Developers

@@ -1,6 +1,109 @@
 {{ define "main" }}
+
+{{ $company := .Site.GetPage "about/company" }}
+{{ if $company }}
+
 <article class="post">
+
+    {{ with $company.Params }}
     <!-- Hero section will be rendered by the hero shortcode -->
-    {{ .Content }}
+    <section class="bg-gradient-to-b from-blue-50 via-blue-50 to-white pt-20 pb-32">
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">{{ .slogan }}</h1>
+            <p class="text-xl text-gray-600 mb-16">{{ .statement }}</p>
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm p-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .mission_title }}</h2>
+                <p class="text-xl text-gray-600">
+                    {{ .mission }}
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    {{ if .leaders }}
+    <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">{{ .leaders_title }}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {{ range .leaders }}
+                    {{ $leader := dict
+                        "name" (index $company.Params (printf "%s_name" .))
+                        "title" (index $company.Params (printf "%s_title" .))
+                        "image" (index $company.Params (printf "%s_image" .))
+                        "linkedin" (index $company.Params (printf "%s_linkedin" .))
+                    }}
+                    {{ partial "team-member.html" $leader }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    </section>
+    {{ end }}
+
+    {{ if .investors }}
+    <section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">{{ .investors_title }}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                {{ range .investors }}
+                {{ $investor := dict
+                "name" (index $company.Params (printf "%s_name" .))
+                "image" (index $company.Params (printf "%s_image" .))
+                }}
+                {{ partial "investor-logo.html" $investor }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    </section>
+    {{ end }}
+
+    {{ if .company_values }}
+    <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">{{ .company_values_title }}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {{ range .company_values }}
+                {{ $value := dict
+                "title" (index $company.Params (printf "%s_title" .))
+                "icon" (index $company.Params (printf "%s_icon" .))
+                "description" (index $company.Params (printf "%s_description" .))
+                }}
+                {{ partial "value-card.html" $value }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    </section>
+    {{ end }}
+
+    {{ if .stats }}
+    <section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                {{ range .stats }}
+                {{ $stat := dict
+                "number" (index $company.Params (printf "%s_number" .))
+                "label" (index $company.Params (printf "%s_label" .))
+                }}
+                {{ partial "stat.html" $stat }}
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+    </section>
+    {{ end }}
+
+    {{ end }}
+
 </article>
+
+{{ end }}
 {{ end }}

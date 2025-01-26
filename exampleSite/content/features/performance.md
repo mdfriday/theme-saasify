@@ -3,7 +3,7 @@ title: "Lightning-Fast Performance"
 description: "Leverage Hugo's blazing-fast build times and optimized output. Your website loads instantly, providing an exceptional user experience."
 layout: "feature"
 badge: "Performance"
-badgeColor: "#2563eb"
+color: "#2563eb"
 features:
   - title: "Sub-second Page Loads"
     description: "Experience instant page transitions with Hugo's static site generation. Pages load in milliseconds, ensuring visitors stay engaged."
@@ -13,9 +13,9 @@ features:
     description: "Built with minimal JavaScript dependencies. Pages remain fast and functional while keeping the bundle size small."
   - title: "CDN-Ready Output"
     description: "Deploy your site to any CDN for global distribution. Static files are optimized for edge caching and maximum performance."
-demo:
-  description: "See how our optimized build process delivers lightning-fast page loads and smooth transitions."
-  image: "/images/feature-1.svg"
+demo: true
+demo_description: "See how our optimized build process delivers lightning-fast page loads and smooth transitions."
+demo_image: "/images/feature-1.svg"
 ---
 
 ## Built for Speed

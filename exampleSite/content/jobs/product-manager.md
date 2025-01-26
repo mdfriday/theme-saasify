@@ -5,7 +5,6 @@ description: "We're seeking a Product Manager to drive our product strategy and 
 location: "San Francisco, CA (Hybrid)"
 type: "Full-time"
 salary: "$130K - $180K"
-layout: "job-single"
 ---
 
 We're looking for a Product Manager to join our team and help shape the future of our product.

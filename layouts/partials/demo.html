@@ -1,0 +1,17 @@
+{{ $demo := .Site.GetPage "service/demo" }}
+{{ if $demo }}
+
+<section class="section" id="demo">
+    <div class="container">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ $demo.Title }}</h2>
+        </div>
+
+        <!-- Feature Grid -->
+        <div class="space-y-32">
+            {{ $demo.Content }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

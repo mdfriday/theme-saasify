@@ -1,0 +1,88 @@
+{{ $client := .Site.GetPage "testimonials" }}
+{{ if $client }}
+
+{{ $background_color := "#f1f5f9" }}
+{{ $animate := "true" }}
+<section class="section{{ if not $background_color }} bg-gray-50{{ end }}" {{ if $background_color }}style="background-color:{{ $background_color }};"{{ end }}>
+    <div class="container">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">{{ i18n "testimonials_title" }}</h2>
+            <p class="text-xl text-gray-600">{{ i18n "testimonials_description" }}</p>
+        </div>
+
+        <div class="testimonials-container overflow-hidden">
+            <div class="testimonials-track{{ if ne $animate "false" }} animate{{ end }}">
+            {{ range $client.Pages }}
+                    <div class="testimonial-card">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="{{ .Params.avatar | relURL }}" alt="{{ .Params.name }}" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-bold">{{ .Params.name }}</h4>
+                                <p class="text-gray-600">{{ .Params.title }}</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">{{ .Content }}</p>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonials-container {
+    padding: 20px 0;
+    position: relative;
+}
+
+.testimonials-container.static {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    overflow: visible;
+}
+
+.testimonials-track {
+    display: flex;
+    gap: 2rem;
+}
+
+.testimonials-track.animate {
+    animation: 40s testimonials-scroll infinite linear;
+}
+
+.testimonial-card {
+    flex: 0 0 auto;
+    width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.testimonials-container.static .testimonial-card {
+    width: 100%;
+}
+
+@keyframes testimonials-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
+.testimonials-container:hover .testimonials-track.animate {
+    animation-play-state: paused;
+}
+
+/* Mobile-specific animation speed */
+@media (max-width: 768px) {
+    .testimonials-track.animate {
+        animation: 15s testimonials-scroll infinite linear;
+    }
+}
+</style>
+
+{{ end }}

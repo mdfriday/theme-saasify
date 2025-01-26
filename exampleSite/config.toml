@@ -1,0 +1,8 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+title = "Friday"
+googleAnalytics = "G-XXXXXXXXXX"
+
+[module]
+  [[module.imports]]
+    path = 'github.com/mdfriday/theme-saasify'

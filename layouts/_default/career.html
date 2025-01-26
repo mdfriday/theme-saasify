@@ -5,39 +5,39 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="text-center">
                 <h1 class="text-4xl font-bold text-white mb-6">{{ .Title }}</h1>
-                <p class="text-xl text-white max-w-2xl mx-auto leading-relaxed">{{ .Description }}</p>
+                <p class="text-xl text-white max-w-2xl mx-auto leading-relaxed">{{ .Params.description }}</p>
             </div>
         </div>
     </div>
 
     <!-- Team Culture Section -->
-    {{ with .Params.culture_section }}
+    {{ if eq .Params.culture_display "true" }}
     <div class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-50 rounded-xl shadow-sm p-8 lg:p-12">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6">{{ .title }}</h2>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">{{ .Params.culture_title }}</h2>
                         <div class="space-y-6">
-                            {{ range .values }}
+                            {{ range .Params.culture_values }}
                             <div class="flex items-start">
                                 <div class="flex-shrink-0">
                                     <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-600 text-white">
-                                        {{ .icon }}
+                                        {{ index $.Params (printf "%s_icon" .) }}
                                     </div>
                                 </div>
                                 <div class="ml-4">
-                                    <h3 class="text-xl font-semibold text-gray-900">{{ .title }}</h3>
-                                    <p class="mt-2 text-gray-600">{{ .description }}</p>
+                                    <h3 class="text-xl font-semibold text-gray-900">{{ index $.Params (printf "%s_title" .) }}</h3>
+                                    <p class="mt-2 text-gray-600">{{ index $.Params (printf "%s_description" .) }}</p>
                                 </div>
                             </div>
                             {{ end }}
                         </div>
                     </div>
                     <div class="relative">
-                        <img src="{{ .image }}" alt="{{ .image_alt }}" class="rounded-lg shadow-xl">
+                        <img src="{{ .Params.culture_image }}" alt="{{ .Params.culture_image_alt }}" class="rounded-lg shadow-xl">
                         <div class="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg px-6 py-4">
-                            <p class="text-gray-900 font-semibold">{{ .image_caption }}</p>
+                            <p class="text-gray-900 font-semibold">{{ .Params.culture_image_caption }}</p>
                         </div>
                     </div>
                 </div>
@@ -47,16 +47,16 @@
     {{ end }}
 
     <!-- Benefits Section -->
-    {{ with .Params.benefits_section }}
+    {{ if eq .Params.benefits_display "true" }}
     <div class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">{{ .title }}</h2>
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">{{ .Params.benefits_title }}</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                {{ range .benefits }}
+                {{ range .Params.benefits_values }}
                 <div class="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-200">
-                    <div class="text-2xl mb-4">{{ .icon }}</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ .title }}</h3>
-                    <p class="text-gray-600">{{ .description }}</p>
+                    <div class="text-2xl mb-4">{{ index $.Params (printf "%s_icon" .) }}</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ index $.Params (printf "%s_title" .) }}</h3>
+                    <p class="text-gray-600">{{ index $.Params (printf "%s_description" .) }}</p>
                 </div>
                 {{ end }}
             </div>
@@ -65,16 +65,18 @@
     {{ end }}
 
     <!-- Open Positions Section -->
-    {{ with .Params.positions_section }}
+    {{ if eq .Params.positions_display "true" }}
     <div class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-50 rounded-xl shadow-sm p-8 lg:p-12">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ .title }}</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Join our team and help shape the future of SaaS. We're always looking for talented individuals who share our passion for innovation.</p>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ .Params.positions_title }}</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">{{ .Params.positions_description }}</p>
                 </div>
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {{ range where $.Site.RegularPages "Section" "jobs" }}
+                    {{ $jobs := $.Site.GetPage "jobs" }}
+                    {{ if $jobs }}
+                    {{ range $jobs.Pages }}
                     <a href="{{ .RelPermalink }}" class="group">
                         <div class="h-full bg-white rounded-lg shadow-sm group-hover:shadow-md transition-all duration-200 overflow-hidden border border-gray-100 group-hover:border-primary-100">
                             <div class="p-6">
@@ -98,13 +100,14 @@
                                     </span>
                                     {{ end }}
                                 </div>
-                                <p class="text-gray-600 mb-4 line-clamp-2">{{ .Description | default .Summary }}</p>
+                                <p class="text-gray-600 mb-4 line-clamp-2">{{ .Params.description }}</p>
                                 <div class="text-primary-600 font-medium group-hover:text-primary-700 transition-colors duration-200">
-                                    {{ $.Params.positions_section.view_position_text }} →
+                                    {{ $.Params.positions_view_position_text }} →
                                 </div>
                             </div>
                         </div>
                     </a>
+                    {{ end }}
                     {{ end }}
                 </div>
             </div>

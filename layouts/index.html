@@ -1,3 +1,13 @@
 {{ define "main" }}
-{{ .Content }}
+
+{{ partial "hero.html" . }}
+{{ partial "demo.html" . }}
+{{ partial "client-logos.html" . }}
+{{ partial "features-section.html" . }}
+{{ partial "testimonials.html" . }}
+
+<div class="mt-16">
+    {{ partial "components/cta.html" . }}
+</div>
+
 {{ end }}

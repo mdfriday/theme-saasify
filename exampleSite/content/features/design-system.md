@@ -3,7 +3,7 @@ title: "Beautiful Design System"
 description: "Create stunning user interfaces with our comprehensive design system built on TailwindCSS. Customize everything to match your brand."
 layout: "feature"
 badge: "Design"
-badgeColor: "#7c3aed"
+color: "#7c3aed"
 features:
   - title: "Modern UI Components"
     description: "A complete set of pre-built components designed for SaaS websites. From navigation bars to pricing tables, everything you need is included."
@@ -13,9 +13,9 @@ features:
     description: "Carefully crafted typography system with perfect vertical rhythm. Easily customize fonts and sizes to match your brand guidelines."
   - title: "Flexible Layouts"
     description: "Modular layout system that adapts to your content. Create unique page layouts while maintaining consistent spacing and alignment."
-demo:
-  description: "Explore our comprehensive design system built with TailwindCSS."
-  image: "/images/feature-2.svg"
+demo: true
+demo_description: "Explore our comprehensive design system built with TailwindCSS."
+demo_image: "/images/feature-2.svg"
 ---
 
 ## Comprehensive Design System

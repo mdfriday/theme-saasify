@@ -1,0 +1,10 @@
+{{ $name := index . "name" }}
+{{ $image := index . "image" }}
+
+<div class="investor-logo p-6 flex items-center justify-center">
+    {{ if $image }}
+    <img src="{{ $image }}" alt="{{ $name }}" class="max-h-12 grayscale hover:grayscale-0 transition-all duration-300">
+    {{ else }}
+    <div class="text-xl font-bold text-gray-400">{{ $name }}</div>
+    {{ end }}
+</div>
