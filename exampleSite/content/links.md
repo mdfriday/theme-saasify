@@ -11,6 +11,10 @@
 - Company
 - LEGAL
 
+##### get_started
+
+- [Get Started Free](/service/get-started.html)
+
 ##### Pricing
 
 - [Pricing](/service/pricing.html)
