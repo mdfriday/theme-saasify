@@ -4,64 +4,66 @@ title: "Features"
 
 ##### feature_title
 
-Simplify and Empower Your Website Creation
+Modern Features for Modern Websites
 
 ##### feature_description
 
-With MDFriday, focus solely on your content while we handle everything else! 
-From diverse themes to robust technical support, effortlessly transform your Markdown files into professional websites in no time.
+Discover how our theme helps you build fast, beautiful SaaS websites with ease.
 
 ##### features
 
+- performance
 - design
-- global
-- technology
+- experience
 
-##### global_title
+##### performance_title
 
-Built-In Multilingual Support
+Lightning-Fast Performance
 
-##### global_description
+##### performance_description
 
-Reach a global audience with robust multilingual support, all without extra configuration.
+Leverage Hugo's blazing-fast build times and optimized output. 
+Your website loads instantly, providing an exceptional user experience.
 
-##### global_badge
+##### performance_badge
 
-Global
+Performance
 
-##### global_badgeColor
+##### performance_badgeColor
 
 #2563eb
 
-##### global_image
+##### performance_image
 
 /images/feature-1.svg
 
-##### global_buttonText
+##### performance_buttonText
 
 Learn More
 
-##### global_buttonLink
+##### performance_buttonLink
 
-/features/global.html
+/features/performance/
 
-##### global_features
+##### performance_features
 
-- Multilingual Capabilities
-- Language Switcher
-- Automatic SEO Optimization
+- Sub-second page loads
+- Optimized assets
+- Minimal JavaScript
+- CDN-ready output
 
-##### global_imagePosition
+##### performance_imagePosition
 
-left
+right
 
 ##### design_title
 
-Rich Themes and Flexible Layouts
+Beautiful Design System
 
 ##### design_description
 
-While we're actively expanding our library to include 500+ themes, enjoy a variety of beautifully crafted designs, with flexible customization options.
+Create stunning user interfaces with our comprehensive design system built on TailwindCSS. 
+Customize everything to match your brand.
 
 ##### design_badge
 
@@ -81,53 +83,54 @@ Learn More
 
 ##### design_buttonLink
 
-/features/design-system.html
+/features/design-system/
 
 ##### design_features
 
-- Hundreds of Themes Coming Soon
-- Shortcode Support
-- Full Customization
+- Modern UI components
+- Responsive design
+- Custom typography
+- Flexible layouts
 
 ##### design_imagePosition
 
-right
+left
 
-##### technology_title 
+##### experience_title 
 
-Robust Technology and Security
+Developer Experience
 
-##### technology_description
+##### experience_description
 
-With powerful technical backing, focus on your content while we ensure your site is secure, fast, and reliable.
+Enjoy a seamless development experience with hot reload, component-based architecture, and clean, maintainable code.
 
-##### technology_badge
+##### experience_badge
 
-Technology
+Development
 
-##### technology_badgeColor
+##### experience_badgeColor
 
 #16a34a
 
-##### technology_image
+##### experience_image
 
 /images/feature-3.svg
 
-##### technology_buttonText
+##### experience_buttonText
 
 Learn More
 
-##### technology_buttonLink
+##### experience_buttonLink
 
-/features/technology.html
+/features/developer-experience/
 
-##### technology_features
+##### experience_features
 
-- SEO-Friendly
-- High Performance & Security
-- Automatic SSL Certificates
-- Automatic Deployment
+- Component system
+- Easy customization
+- Clean code
+- Detailed documentation
 
-##### technology_imagePosition
+##### experience_imagePosition
 
 right

@@ -6,7 +6,6 @@ description: "Learn how to customize your Hugo theme to create a unique website 
 categories: ["Development"]
 tags: ["hugo", "themes", "customization", "web-design"]
 featured_image: "/images/blog/blog-2.webp"
-weight: 2
 ---
 
 ## Introduction

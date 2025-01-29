@@ -1,6 +1,6 @@
 +++
 title = "facebook"
-url = "https://www.facebook.com/profile.php?id=61567883955829"
+url = "https://www.facebook.com/nickname"
 weight = 3
 +++
 

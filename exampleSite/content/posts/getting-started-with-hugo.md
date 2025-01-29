@@ -6,7 +6,6 @@ description: "Learn how to build your first website with Hugo, the world's faste
 categories: ["Tutorials"]
 tags: ["hugo", "static-site", "web-development", "beginners"]
 featured_image: "/images/blog/blog-1.jpg"
-weight: 4
 ---
 
 ## Introduction

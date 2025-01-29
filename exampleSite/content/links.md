@@ -1,15 +1,14 @@
 ##### main
 
 - Features
-- Themes
-- Blog
 - Pricing
+- Blog
+- Company
 
 ##### footer
 
 - Features
-- Themes
-- About
+- Company
 - LEGAL
 
 ##### get_started
@@ -20,24 +19,23 @@
 
 - [Pricing](/service/pricing.html)
 
-##### Themes
-
-- [Themes](/categories/themes/)
-
 ##### Blog
 
 - [Blog](/posts/)
 
+
 ##### Features
 
-- [Rich Themes and Flexible Layouts](/features/design-system.html)
-- [Built-In Multilingual Support](/features/global.html)
-- [Robust Technology and Security](/features/technology.html)
+- [Performance](/features/performance.html)
+- [Design System](/features/design-system.html)
+- [Developer Experience](/features/developer-experience.html)
 
-##### About
+##### Company
 
-- [About](/about/company.html)
+- [About Us](/about/company.html)
+- [Careers](/about/career.html)
 
 ##### LEGAL
 
+- [License](/about/license.html)
 - [Privacy Policy](/about/privacy.html)

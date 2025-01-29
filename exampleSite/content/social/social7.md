@@ -1,6 +1,6 @@
 +++
 title = "linkedin"
-url = "https://www.linkedin.com/in/wayde-sun-aab70b23/"
+url = "https://www.linkedin.com/in/nickname"
 weight = 7
 +++
 
