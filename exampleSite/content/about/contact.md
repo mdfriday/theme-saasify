@@ -1,6 +1,6 @@
 # author
 
-Chaoming Li
+Sun Wei
 
 # description
 
@@ -10,14 +10,3 @@ Hugo theme for Saas
 
 /images/logo.svg
 
-# phone
-
-+86 xxx xxxx xxxx
-
-# avatar
-
-me.png
-
-# address
-
-Wuhan

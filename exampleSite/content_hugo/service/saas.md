@@ -5,12 +5,12 @@ description: "Turn markdown docs into website, in minutes."
 
 ##### headline
 
-Turn MD docs to website, in  minutes
+Build Your SaaS Website
 
 ##### sub_headline
 
-Transform your Markdown documents into professional, multilingual websites. 
-With 500+ free themes and powerful shortcodes to enhance your pages, it’s as easy as taking notes.
+Create stunning, responsive websites that load instantly.
+Built with Hugo and TailwindCSS for maximum performance and flexibility
 
 ##### primary_button_text
 
@@ -18,7 +18,7 @@ Get Started Free
 
 ##### primary_button_url
 
-/service/get-started.html
+/
 
 ##### secondary_button_text
 
@@ -26,7 +26,7 @@ View Demo
 
 ##### secondary_button_url
 
-#demo
+/
 
 ##### hero_image
 

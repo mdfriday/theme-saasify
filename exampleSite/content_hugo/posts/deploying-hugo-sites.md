@@ -6,7 +6,6 @@ description: "Learn how to deploy your Hugo site to various platforms including 
 categories: ["Deployment"]
 tags: ["hugo", "deployment", "netlify", "vercel", "github-pages"]
 featured_image: "/images/blog/blog-3.webp"
-weight: 3
 ---
 
 ## Introduction

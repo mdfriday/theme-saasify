@@ -1,6 +1,6 @@
 +++
 title = "youtube"
-url = "https://www.youtube.com/@sunweixyz"
+url = "https://youtube.com/sunweixyz"
 weight = 2
 +++
 

@@ -8,32 +8,24 @@ Find answers to frequently asked questions about our pricing plans and features.
 
 ##### questions
 
-- What type of payment do you accept?
-- Do you offer custom pricing for larger teams?
-- What's included in the free updates?
-- What kind of support is included?
-- Can I upgrade or downgrade my plan?
+- When will the Pro and Enterprise plans be available?
+- What happens if I exceed the limits on my plan?
+- Can I upgrade or downgrade my plan at any time?
 
-##### What type of payment do you accept?
+##### When will the Pro and Enterprise plans be available?
 
-We accept all major credit cards, PayPal, and bank transfers. 
-All payments are processed securely through our payment providers.
+The Pro and Enterprise plans are coming soon! 
+We are currently working on finalizing the advanced features for these plans to provide the best experience for our professional and enterprise users. Stay tuned for updates on our website.
 
-##### Do you offer custom pricing for larger teams?
+##### What happens if I exceed the limits on my plan?
 
-Yes! If you have specific needs or a larger team, please contact our sales team for custom pricing tailored to your requirements.
+If you exceed the number of deployments or storage space included in your plan, you will be charged according to the additional usage. 
+For example, extra deployments will incur a small fee, and storage overages will be billed at a rate specific to your plan. 
+You will receive a notification when you're nearing your limits so you can manage your usage.
 
-##### What's included in the free updates?
+##### Can I upgrade or downgrade my plan at any time?
 
-Free updates include all new features, improvements, and bug fixes released during your subscription period. 
-You'll always have access to the latest version.
-
-##### What kind of support is included?
-
-All plans include technical support, with varying response times based on your plan level. 
-Enterprise customers get priority support with dedicated account managers.
-
-##### Can I upgrade or downgrade my plan?
-
-Yes, you can change your plan at any time. When upgrading, you'll be prorated for the remainder of your billing period. 
-When downgrading, changes take effect at the next billing cycle.
+Yes! You can upgrade or downgrade your plan at any time. 
+If you decide to upgrade to a higher plan, the new plan will take effect immediately. 
+For downgrades, the changes will apply at the start of the next billing cycle. 
+Your usage data (like deployments and storage) will be adjusted accordingly.

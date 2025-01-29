@@ -5,11 +5,13 @@ description: "Choose the perfect plan for your needs"
 
 ##### plan_title
 
-Alternative Pricing Options
+Friday Growth Plans
 
 ##### plan_description
 
-Choose a plan that best suits your business needs with our flexible pricing options.
+Empowering your growth, step by step. 
+Whether you are just starting out or scaling to new heights, Friday is here to grow with you. 
+From personal projects to professional success, we provide the tools and support you need for every stage of your journey.
 
 ##### plans
 
@@ -19,23 +21,27 @@ Choose a plan that best suits your business needs with our flexible pricing opti
 
 ##### Basic_price
 
-19
+0
 
 ##### Basic_description
 
-Perfect for freelancers and solo developers.
+Designed for individuals and small projects just starting out, this plan empowers you to explore Friday’s powerful features at no cost.
 
 ##### Basic_features
 
-- Core features included
-- Community support
-- Team size: 1 developer
-- Basic analytics
-- Monthly updates
+- Preview: Up to 500 per month
+- Deployments: Up to 50 per month
+- Storage: 500MB
+- Customize Domain
+- All community themes
+- All community shortcodes
+- Footer includes "Powered by Friday" branding
+- Automatic HTTPS support
+- Automatic SEO support
 
 ##### Basic_button_text
 
-Choose Basic
+Morning Star Plan (Free)
 
 ##### Basic_button_url
 
@@ -43,11 +49,12 @@ Choose Basic
 
 ##### Professional_price
 
-79
+?
 
 ##### Professional_description
 
-Ideal for growing development teams.
+Tailored for professional creators, teams, and small businesses, this plan enhances your website’s performance and empowers you with tools for better site operations. 
+Achieve more with advanced features!
 
 ##### Professional_featured
 
@@ -56,14 +63,17 @@ true
 ##### Professional_features
 
 - All Basic features
-- Priority support
-- Team size: up to 5 developers
-- Advanced analytics
-- CI/CD integration
+- Preview: Unlimited
+- Deployments: Up to 500 per month
+- Storage: 2GB
+- Premium themes
+- Priority customer support
+- Email subscription
+- Remove "Powered by Friday" branding
 
 ##### Professional_button_text
 
-Choose Pro
+Pro Partnership Plan (Coming Soon)
 
 ##### Professional_button_url
 
@@ -71,23 +81,22 @@ Choose Pro
 
 ##### Business_price
 
-299
+?
 
 ##### Business_description
 
-For large organizations and enterprises.
+Built for enterprises that demand high performance, scalability, and advanced capabilities. 
+Friday becomes your trusted online partner to achieve business goals and grow together!
 
 ##### Business_features
 
 - All Pro features
 - 24/7 dedicated support
-- Unlimited team size
-- Custom integrations
 - SLA guarantee
 
 ##### Business_button_text
 
-Choose Business
+Growth Plan (Coming Soon)
 
 ##### Business_button_url
 

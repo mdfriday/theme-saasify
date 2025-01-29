@@ -1,10 +1,12 @@
 ##### title 
 
-Ready to Build Your SaaS Website?
+Create Your Professional Website Today!
 
 ##### description
 
-Join companies already using our theme to create beautiful, high-performance websites.
+Transform your Markdown files into stunning, multilingual websites with ease. 
+Enjoy growing access to themes, robust technical support, and built-in security. 
+Start building your site!
 
 ##### primary_button_text
 
