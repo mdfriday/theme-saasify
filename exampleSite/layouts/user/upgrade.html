@@ -1,0 +1,134 @@
+{{ define "main" }}
+<div class="upgrade-container">
+    <div class="upgrade-header">
+        <h1 class="text-3xl font-bold text-center mb-4">Choose Your Plan</h1>
+        <p class="text-gray-600 text-center mb-12">Select the perfect plan for your growing needs</p>
+    </div>
+
+    <div class="plans-grid">
+        <!-- Basic Plan -->
+        <div class="plan-card">
+            <div class="plan-header">
+                <h3 class="plan-name">Basic</h3>
+                <div class="plan-price">
+                    <span class="amount">$9</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Perfect for getting started</p>
+            </div>
+            <ul class="plan-features">
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>50 Preview Builds/month</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>20 Deployments/month</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Community Support</span>
+                </li>
+            </ul>
+            <button class="plan-button" onclick="window.location.href='/user/payment.html?plan=basic'">Get Started</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="plan-header">
+                <h3 class="plan-name">Pro</h3>
+                <div class="plan-price">
+                    <span class="amount">$29</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Best for growing teams</p>
+            </div>
+            <ul class="plan-features">
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>200 Preview Builds/month</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>100 Deployments/month</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Priority Support</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Custom Domain Support</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Advanced Analytics</span>
+                </li>
+            </ul>
+            <button class="plan-button current">Current Plan</button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="plan-card">
+            <div class="plan-header">
+                <h3 class="plan-name">Enterprise</h3>
+                <div class="plan-price">
+                    <span class="amount">$99</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="plan-description">For large-scale operations</p>
+            </div>
+            <ul class="plan-features">
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Unlimited Preview Builds</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Unlimited Deployments</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>24/7 Premium Support</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Advanced Security</span>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Custom Integration</span>
+                </li>
+            </ul>
+            <button class="plan-button" onclick="window.location.href='/user/payment.html?plan=enterprise'">Upgrade</button>
+        </div>
+    </div>
+</div>
+{{ end }} 

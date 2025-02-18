@@ -15,6 +15,10 @@
 
 - [Get Started Free](/service/get-started.html)
 
+##### sign_in
+
+- [Sign In](/user/login.html)
+
 ##### Pricing
 
 - [Pricing](/service/pricing.html)

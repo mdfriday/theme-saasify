@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="payment-container">
+    <div class="payment-header">
+        <h1 class="text-3xl font-bold text-center mb-4">Complete Your Upgrade</h1>
+        <p class="text-gray-600 text-center mb-8">Choose your preferred payment method</p>
+    </div>
+
+    <div class="payment-methods">
+        <div class="payment-method">
+            <h3 class="method-title">PayPal</h3>
+            <p class="method-description">Pay via PayPal.me</p>
+            <a href="https://paypal.me/yourlink" target="_blank" class="payment-link paypal">
+                Pay with PayPal
+                <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="payment-method">
+            <h3 class="method-title">Alipay</h3>
+            <p class="method-description">Scan QR code with Alipay</p>
+            <div class="qr-code">
+                <img src="/images/alipay-qr.png" alt="Alipay QR Code">
+            </div>
+        </div>
+    </div>
+
+    <div class="completion-section">
+        <button id="completeUpgrade" class="complete-button">
+            Payment Successful
+        </button>
+        <div class="trust-notice">
+            <h4 class="notice-title">Trust-Based Upgrade System</h4>
+            <p class="notice-text">
+                After completing your payment, click the "Payment Successful" button above. Your plan will be upgraded immediately based on our trust principle. We will verify the payment within 24 hours and send you a confirmation email.
+            </p>
+            <p class="notice-warning">
+                Note: We operate on a trust basis. However, repeated false payment claims will result in account restrictions. We trust our users to maintain the integrity of this system.
+            </p>
+        </div>
+    </div>
+</div>
+{{ end }} 

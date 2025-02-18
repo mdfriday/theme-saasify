@@ -39,7 +39,9 @@
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
                     {{ with $.Site.Menus.sign_in }}
-                    <a href="/user/login" class="btn btn-primary">Sign In</a>
+                    <a href="{{ .URL | default "#" }}" class="inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600">
+                        {{ .Name | default "Sign in" }}
+                    </a>
                     {{ end }}
                     <a href="{{ $.Site.Menus.get_started.URL }}" class="inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out bg-primary-600 text-white hover:bg-primary-700 hover:scale-105">
                         {{ $.Site.Menus.get_started.Name }}
@@ -78,6 +80,11 @@
                 {{ end }}
                 
                 <div class="pt-4 space-y-4">
+                    {{ with $.Site.Menus.sign_in }}
+                    <a href=".URL" class="block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out border-2 border-gray-200 hover:border-primary-600 hover:text-primary-600">
+                        {{ .Name | default "Sign in" }}
+                    </a>
+                    {{ end }}
                     <a href="{{ $.Site.Menus.get_started.URL }}" class="block text-center px-6 py-3 rounded-lg font-bold transition duration-200 ease-in-out bg-primary-600 text-white hover:bg-primary-700 hover:scale-105">
                         {{ $.Site.Menus.get_started.Name }}
                     </a>

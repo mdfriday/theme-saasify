@@ -1,0 +1,101 @@
+{{ define "main" }}
+<div class="profile-container">
+    <div class="profile-header">
+        <div class="user-info">
+            <div class="avatar">
+                <span class="avatar-text">J</span>
+            </div>
+            <div class="user-details">
+                <div class="name-badge">
+                    <h1 class="text-2xl font-bold text-gray-900">John Doe</h1>
+                    <span class="plan-badge">Pro</span>
+                </div>
+                <p class="text-gray-600">john.doe@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="plan-details">
+        <div class="plan-features">
+            <h2 class="section-title">Current Features</h2>
+            <ul class="feature-list">
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div class="feature-content">
+                        <span class="feature-title">Custom Domain Support</span>
+                        <span class="feature-description">Connect your own domain and SSL certificate</span>
+                    </div>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div class="feature-content">
+                        <span class="feature-title">Priority Support</span>
+                        <span class="feature-description">24/7 dedicated support with 2-hour response time</span>
+                    </div>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div class="feature-content">
+                        <span class="feature-title">Advanced Analytics</span>
+                        <span class="feature-description">Detailed insights with real-time performance metrics</span>
+                    </div>
+                </li>
+                <li>
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <div class="feature-content">
+                        <span class="feature-title">Team Collaboration</span>
+                        <span class="feature-description">Multi-user access with role-based permissions</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="plan-usage">
+            <h2 class="section-title">Usage Statistics</h2>
+            <div class="usage-list">
+                <div class="usage-item">
+                    <div class="usage-header">
+                        <span class="usage-label">Preview Builds</span>
+                        <span class="usage-count">150/200</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="usage-item">
+                    <div class="usage-header">
+                        <span class="usage-label">Deployments</span>
+                        <span class="usage-count">45/100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
+                </div>
+
+                <div class="usage-item">
+                    <div class="usage-header">
+                        <span class="usage-label">Team Members</span>
+                        <span class="usage-count">3/5</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="upgrade-section">
+        <a href="/user/upgrade.html" class="upgrade-button">Upgrade Plan</a>
+    </div>
+</div>
+{{ end }} 

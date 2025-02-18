@@ -1,0 +1,131 @@
+.payment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.payment-method {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.method-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.method-description {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.payment-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(120deg, #00dc82 0%, #36e4da 50%, #0047e1 100%);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.payment-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 220, 130, 0.2);
+}
+
+.external-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.completion-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.complete-button {
+    padding: 16px 40px;
+    background: linear-gradient(120deg, #00dc82 0%, #36e4da 50%, #0047e1 100%);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+}
+
+.complete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 220, 130, 0.2);
+}
+
+.trust-notice {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #f9fafb;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.notice-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+.notice-text {
+    color: #4b5563;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.notice-warning {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-code {
+        width: 160px;
+        height: 160px;
+    }
+} 
